@@ -178,6 +178,7 @@ For example, you may want to configure some JSON schemas before editor mounted, 
 ```js
 class App extends React.Component {
     editorWillMount(monaco) {
+        // check https://microsoft.github.io/monaco-editor/api/interfaces/monaco.languages.json.DiagnosticsOptions.html for more details
         monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
             validate: true,
             schemas: [{
